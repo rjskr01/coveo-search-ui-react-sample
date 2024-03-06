@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Example on how to customize CSS variables */
+      /* :root {
+        --atomic-primary: red;
+        --atomic-font-family: "Comic Sans MS", "Comic Sans", cursive;
+      } */
+
+      /* Example on how to customize result templates CSS parts */
+      /* atomic-result::part(result-link):hover {
+        color: orange;
+      } */
+
+      /* Example on how to customize the color facet */
+      atomic-color-facet::part(value-dynamicscrmitem) {
+        /* background-image: url("/public/assets/mail.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      atomic-color-facet::part(value-lithiumuser) {
+        /* background-image: url("/build/assets/folder.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      atomic-color-facet::part(value-YouTubeVideo) {
+        /* background-image: url("build/assets/video.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      atomic-color-facet::part(value-lithiummessage) {
+        /* background-image: url("build/assets/kb.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      atomic-color-facet::part(value-lithiumthread) {
+        /* background-image: url("build/assets/salesforce-standard-post.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      atomic-color-facet::part(value-html) {
+        /* background-image: url("build/assets/webpage.svg"); */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header-bg {
+        background-color: var(--atomic-neutral-light);
+        grid-area: 1 / -1 / 1 / 1;
+      }
+
+      atomic-search-layout {
+        row-gap: var(--atomic-layout-spacing-y);
+      }
